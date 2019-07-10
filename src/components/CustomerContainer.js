@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import {withRouter} from 'react-router-dom'
 import AppFrame from './AppFrame';
 import CustomerActions from './CustomerActions';
 import CustomersList from './CustomersList'
+
 const customers = [
     {
         "dni":'27000000',
@@ -24,7 +25,7 @@ const customers = [
 class CustomerContainer extends Component {
     
     handleAddNew = () => {
-        console.log('Nuevo cliente')
+        this.props.history.push("/customers/new")
     }
 
     renderBody = customers => {
@@ -51,4 +52,4 @@ class CustomerContainer extends Component {
     }
 }
 
-export default CustomerContainer;
+export default withRouter(CustomerContainer);
