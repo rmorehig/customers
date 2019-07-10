@@ -5,7 +5,7 @@ import HomeContainer from './components/HomeContainer';
 
 class App extends Component {
 
-  renderHome = () => <h1>Home</h1>;
+  renderHome = () => <HomeContainer/>;
 
   renderCustomerContainer = () => <h1>Customer Container</h1>;
 
@@ -21,7 +21,7 @@ class App extends Component {
             <Route exact path="/customers/new" component={this.renderCustomerNewContainer}/>
             <Route exact path="/customers/:dni" component={this.renderCustomerContainer}/>
             <Route exact path="/customers" component={this.renderCustomerListContainer}/>  
-            <Route exact path="/" component={HomeContainer}/>
+            <Route exact path="/" component={this.renderHome}/>
           </Switch>
         </div>
       </Router>
