@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import PropTypes from 'prop-types';
 import {withRouter} from 'react-router-dom'
 import AppFrame from "./AppFrame";
 import CustomerActions from './CustomerActions';
@@ -28,8 +27,6 @@ class HomeContainer extends Component {
             }
 };
 
-HomeContainer.propTypes = {
-    
-};
+
 
 export default withRouter(HomeContainer);

@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import HomeContainer from './components/HomeContainer';
+import CustomerContainer from './components/CustomerContainer';
 
 class App extends Component {
 
@@ -9,7 +10,7 @@ class App extends Component {
 
   renderCustomerContainer = () => <h1>Customer Container</h1>;
 
-  renderCustomerListContainer = () => <h1>Customer List Container</h1>;
+  renderCustomerListContainer = () => <CustomerContainer/>;
 
   renderCustomerNewContainer = () => <h1>Customer New Container</h1>;
 
