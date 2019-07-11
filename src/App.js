@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import HomeContainer from './components/HomeContainer';
-import CustomerContainer from './components/CustomerContainer';
+import HomeContainer from './containers/HomeContainer';
+import CustomerContainer from './containers/CustomerContainer';
 
 class App extends Component {
 

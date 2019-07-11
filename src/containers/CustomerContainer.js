@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {withRouter} from 'react-router-dom'
-import AppFrame from './AppFrame';
-import CustomerActions from './CustomerActions';
-import CustomersList from './CustomersList'
+import AppFrame from './../components/AppFrame';
+import CustomerActions from './../components/CustomerActions';
+import CustomersList from './../components/CustomersList'
 
 const customers = [
     {

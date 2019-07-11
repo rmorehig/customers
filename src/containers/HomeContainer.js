@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {withRouter} from 'react-router-dom'
-import AppFrame from "./AppFrame";
-import CustomerActions from './CustomerActions';
+import AppFrame from "./../components/AppFrame";
+import CustomerActions from './../components/CustomerActions';
 
 class HomeContainer extends Component {
 
